@@ -104,6 +104,7 @@ If you'd like to preview the theme locally (for example, in the process of propo
 4. Run `bundle exec jekyll serve` to start the preview server
 5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
-### Running tests
+### Running Admin panel
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+1.Start Jekyll as you would normally (bundle exec jekyll serve)
+2.Navigate to http://localhost:4000/admin to access the administrative interface
