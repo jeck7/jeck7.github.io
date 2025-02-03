@@ -15,8 +15,6 @@ layout: default
  * Each unit test should be independent of other tests.
  * By definition, unit tests should be fast.
  
- 
- 
 2. Unit test controllers using Junit 5 and Mockito
 3. Do nothing when possible
 
