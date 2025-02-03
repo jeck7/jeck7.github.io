@@ -18,4 +18,5 @@ layout: default
  
  
 2. Unit test controllers using Junit 5 and Mockito
+3. Do nothing when possible
 
