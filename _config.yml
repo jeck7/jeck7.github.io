@@ -1,6 +1,6 @@
 # Site settings
-title: "Spring REST Controller Testing Guide"
-description: "Comprehensive guide for writing unit tests for Spring REST controllers using JUnit 5 and Mockito"
+title: "Modern Full-Stack Development Guide"
+description: "Comprehensive guide for modern full-stack development with Spring Boot 3, React 18, TypeScript, PostgreSQL, and cloud deployment"
 author: "Hristo"
 email: "your-email@example.com"
 url: "https://jeck7.github.io"

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Fitness Booking Platform"
-description: "A modern full-stack fitness platform for booking trainers and events in gyms. Built with Spring Boot 3, React 18, and PostgreSQL."
+title: "Modern Full-Stack Development Guide"
+description: "Comprehensive guide for modern full-stack development with Spring Boot 3, React 18, TypeScript, PostgreSQL, and cloud deployment"
 ---
 
-# 🏋️ Fitness Booking Platform
+# 🚀 Modern Full-Stack Development Guide
 
-A comprehensive, modern fitness platform that connects clients with trainers and gyms. Built with cutting-edge technologies and designed for scalability, this platform offers seamless booking experiences for fitness enthusiasts.
+A comprehensive guide showcasing modern full-stack development practices using cutting-edge technologies. This guide demonstrates how to build scalable, maintainable applications with Spring Boot 3, React 18, TypeScript, PostgreSQL, and cloud deployment.
 
 ## 🚀 Live Demo
 
@@ -14,9 +14,9 @@ A comprehensive, modern fitness platform that connects clients with trainers and
 - **Backend API**: [https://backend-prod2-prod2.up.railway.app](https://backend-prod2-prod2.up.railway.app)
 - **API Documentation**: [Swagger UI](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
 
-## 🏗️ Architecture Overview
+## 🏗️ Technology Stack Overview
 
-This is a full-stack application built with modern technologies:
+This guide demonstrates modern full-stack development with:
 
 - **Backend**: Spring Boot 3.x with Java 17
 - **Frontend**: React 18 with TypeScript
@@ -27,31 +27,31 @@ This is a full-stack application built with modern technologies:
 - **Payments**: Stripe integration
 - **Deployment**: Railway with Docker
 
-## ✨ Key Features
+## ✨ Key Development Concepts
 
-### 👥 User Management
-- **Multi-role system**: Admin, Trainer, Client
-- **Secure authentication** with JWT tokens
+### 🔐 Authentication & Security
+- **JWT-based authentication** with refresh tokens
+- **Role-based access control** (RBAC)
 - **Password reset** functionality
-- **User profiles** with image uploads
+- **Secure session management**
 
-### 🏋️‍♂️ Trainer Features
-- **Detailed profiles** with specializations
-- **Work schedule** management
-- **Rating and review** system
-- **Availability** tracking
+### 🎨 Modern Frontend Development
+- **React 18** with hooks and functional components
+- **TypeScript** for type safety
+- **Material-UI** component library
+- **Responsive design** for all devices
 
-### 🏢 Gym & Event Management
-- **Gym listings** with location and amenities
-- **Event creation** and management
-- **Time slot booking** system
-- **Real-time availability** updates
+### 🗄️ Database & Backend
+- **PostgreSQL** with JPA/Hibernate
+- **RESTful API** design
+- **Database optimization** and indexing
+- **Transaction management**
 
-### 💳 Payment System
+### 💳 Payment & Media Integration
 - **Stripe integration** for secure payments
-- **Booking payments** with PENDING status
-- **Payment history** tracking
-- **Admin payment** management
+- **Cloudinary CDN** for image management
+- **Email notifications** with SMTP
+- **File upload** and processing
 
 ## 🛠️ Technology Stack
 
@@ -73,10 +73,10 @@ This is a full-stack application built with modern technologies:
 - **Axios** - HTTP client
 - **React Query** - Data fetching and caching
 
-## 📁 Project Structure
+## 📁 Modern Project Structure
 
 ```
-fitness-booking-platform/
+full-stack-application/
 ├── backend/                 # Spring Boot application
 │   ├── src/main/java/      # Java source code
 │   ├── src/main/resources/ # Configuration files
@@ -146,34 +146,36 @@ npm start
 - [Deployment Guide](deployment.md) - Production deployment instructions
 - [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html) - Interactive API docs
 
-## 🎯 Development Highlights
+## 🎯 Modern Development Practices
 
-### Modern Development Practices
-- **TypeScript** for type safety
+### Type Safety & Code Quality
+- **TypeScript** for frontend type safety
+- **Java 17+** with modern language features
+- **Clean Code** principles throughout
+- **Comprehensive testing** at all levels
+- **Code documentation** and API docs
+
+### Security & Authentication
 - **JWT authentication** with refresh tokens
-- **RESTful API** design
-- **Responsive design** for all devices
-- **Internationalization** support (EN/BG)
-
-### Security Features
-- **HttpOnly cookies** for refresh tokens
+- **HttpOnly cookies** for secure token storage
 - **CORS** configuration for cross-origin requests
 - **Input validation** and sanitization
-- **Role-based access control**
+- **Role-based access control** (RBAC)
 
-### Performance Optimizations
-- **Cloudinary CDN** for image delivery
+### Performance & Scalability
+- **CDN integration** for fast content delivery
+- **Database optimization** with proper indexing
 - **React Query** for efficient data fetching
 - **Lazy loading** for better performance
-- **Database indexing** for fast queries
+- **Cloud deployment** with auto-scaling
 
 ## 🤝 Contributing
 
-This project is open source and welcomes contributions! Please see our [Contributing Guidelines](about.md#contributing) for details.
+This guide is open source and welcomes contributions! Please see our [Contributing Guidelines](about.md#contributing) for details.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This guide is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -182,7 +184,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [View Live Demo](https://frontend-prod2-prod2.up.railway.app)
 - [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
 - [GitHub Repository](https://github.com/jeck7/fitness-booking-platform)
-- [About the Project](about.md)
+- [About the Guide](about.md)
 
 ---
 
