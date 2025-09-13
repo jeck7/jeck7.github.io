@@ -139,6 +139,8 @@ src/
 - **React Router** - Client-side routing
 - **Axios** - HTTP client with interceptors
 - **React Query** - Data fetching and caching
+- **i18n** - Internationalization (English/Bulgarian)
+- **Google Analytics 4** - User behavior tracking
 - **React Hook Form** - Form management
 
 ### State Management
@@ -221,6 +223,36 @@ The API follows RESTful design principles with clear resource-based URLs:
 - **Error handling** with custom exception classes
 - **Rate limiting** and security headers
 - **CORS configuration** for cross-origin requests
+
+## 🤖 AI & Advanced Features Architecture
+
+### AI-Powered Plan Generator
+
+#### Workout Plan Generation
+- **AI Integration** - Machine learning algorithms for personalized workout plans
+- **Goal-Based Planning** - Plans tailored to specific fitness objectives
+- **Difficulty Adaptation** - Dynamic plan adjustment based on user progress
+- **Multi-step Wizard** - User-friendly interface for plan customization
+
+#### Nutrition Planning System
+- **Dietary Restrictions** - Support for various dietary needs and preferences
+- **Macro Tracking** - Detailed macronutrient breakdown and monitoring
+- **Recipe Integration** - Access to healthy recipes and meal suggestions
+- **Plan Export** - Export plans in various formats (PDF, image, etc.)
+
+### Community & Social Features
+
+#### Live Community Showcase
+- **Real User Display** - Showcase of actual trainers and clients
+- **Image Galleries** - Swipe navigation with modal previews
+- **Instagram Integration** - Embedded social media content
+- **Real-time Statistics** - Live community metrics and engagement data
+
+#### Gamification System
+- **Leaderboard** - Engaging ranking system for user motivation
+- **Achievement System** - Badges and rewards for accomplishments
+- **Social Sharing** - Easy sharing of achievements and progress
+- **Community Challenges** - Regular fitness challenges and competitions
 
 ## 🚀 Deployment Architecture
 

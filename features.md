@@ -17,6 +17,7 @@ The platform supports three distinct user roles with different permissions and c
 #### 🔐 Authentication & Security
 
 - **User Registration** - New users can create accounts with email and password
+- **Promo Code Support** - Registration and booking discounts with promo codes
 - **Secure Login** - JWT-based authentication with refresh tokens
 - **Password Reset** - Forgot password functionality with email verification
 - **Profile Management** - Users can update their personal information
@@ -32,6 +33,9 @@ The platform supports three distinct user roles with different permissions and c
 - **Payment Processing** - Secure payment for bookings via Stripe
 - **Booking Management** - View, modify, and cancel bookings
 - **Review System** - Rate and review trainers after sessions
+- **AI Workout Plans** - AI-powered personalized workout plan generation
+- **Nutrition Plans** - Personalized nutrition plans with dietary restrictions
+- **Plan Sharing** - Share workout and nutrition plans with social media integration
 
 #### 🏋️‍♂️ Trainer Features
 
@@ -120,6 +124,42 @@ The platform supports three distinct user roles with different permissions and c
 - **Payment Analytics** - Detailed payment and transaction reports
 - **Refund Management** - Process and track refunds
 - **Commission Tracking** - Monitor trainer commissions and fees
+
+## 🤖 AI & Advanced Features
+
+### Plan Generator System
+
+#### AI-Powered Workout Plans
+- **Personalized Generation** - AI creates workout plans based on user goals and preferences
+- **Goal-Based Planning** - Plans tailored to specific fitness objectives (weight loss, muscle gain, endurance)
+- **Difficulty Adaptation** - Plans that adapt to user's fitness level and progress
+- **Multi-step Wizard** - User-friendly interface for plan creation and customization
+
+#### Nutrition Planning
+- **Dietary Restrictions** - Support for various dietary needs and restrictions
+- **Personalized Meal Plans** - Custom nutrition plans based on individual requirements
+- **Macro Tracking** - Detailed macronutrient breakdown and tracking
+- **Recipe Integration** - Access to healthy recipes and meal suggestions
+
+#### Plan Management
+- **Plan History** - Complete history of all generated plans
+- **Progress Tracking** - Monitor progress and plan effectiveness
+- **Plan Sharing** - Share plans with friends and social media
+- **Export Options** - Export plans in various formats (PDF, image, etc.)
+
+### Community & Social Features
+
+#### Live Community Showcase
+- **Real User Display** - Showcase of actual trainers and clients
+- **Image Galleries** - Swipe navigation with modal previews
+- **Instagram Integration** - Embedded Instagram posts and social proof
+- **Real-time Statistics** - Live community metrics and engagement data
+
+#### Gamification & Engagement
+- **Mysterious Leaderboard** - Engaging leaderboard system for user motivation
+- **Achievement System** - Badges and rewards for user accomplishments
+- **Social Sharing** - Easy sharing of achievements and progress
+- **Community Challenges** - Regular fitness challenges and competitions
 
 ## 🖼️ Media & Content Management
 

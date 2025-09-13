@@ -29,25 +29,40 @@ fitness-booking-platform/
 ## 🚀 Features
 
 ### Users
-- Registration and login
-- User profiles
+- Registration and login with promo code support
+- User profiles with image management
 - Roles (Admin, Trainer, Client)
+- Password reset functionality
 
 ### Trainers
-- Trainer profiles
-- Specializations
-- Work schedule
-- Ratings and reviews
+- Trainer profiles with multiple images
+- Specializations and ratings
+- Work schedule management
+- Image gallery with preview modals
 
 ### Gyms and Events
-- Gym management
-- Event creation
-- Time slot booking
+- Gym management with location filtering
+- Event creation (indoor/outdoor events)
+- Optional gym selection for outdoor events
+- Event image galleries with swipe navigation
 
 ### Bookings
-- Online booking
+- Online booking with promo code discounts
 - Booking calendar
-- Notifications
+- Payment integration (Stripe)
+- Booking notifications
+
+### Plan Generator
+- AI-powered workout plan generation
+- Personalized nutrition plans
+- Plan history and progress tracking
+- Plan sharing functionality
+
+### Community Features
+- Live community showcase (trainers & clients)
+- Instagram integration
+- Mysterious leaderboard for user engagement
+- Real-time community statistics
 
 ## 🛠️ Technologies
 
@@ -61,41 +76,42 @@ fitness-booking-platform/
 - Maven
 
 ### Frontend
-- React 18
-- TypeScript
-- Material-UI (MUI)
-- React Router
-- Axios
-- React Query
+- React 18 with TypeScript
+- Material-UI (MUI) with responsive design
+- React Router for navigation
+- Axios for API communication
+- React Query for data fetching
+- i18n for internationalization (EN/BG)
+- Google Analytics 4 integration
 
-## 📦 New Features & Integrations
+## 📦 Recent Features & Integrations
 
 ### Cloudinary Image Management
-- Switched local uploads to Cloudinary (CDN, optimization, transformations).
-- Deduplication: identical images are not re-uploaded; existing URL is returned.
-- Optimized URLs in UI via `getOptimizedImageUrl`.
-- Updated components: `Layout`, `Dashboard`, `Trainers`, `Events`, `Gyms`.
+- Switched local uploads to Cloudinary (CDN, optimization, transformations)
+- Deduplication: identical images are not re-uploaded; existing URL is returned
+- Optimized URLs in UI via `getOptimizedImageUrl`
+- Updated components: `Layout`, `Dashboard`, `Trainers`, `Events`, `Gyms`
 
 Backend config in `application.properties`:
 - `cloudinary.cloud-name`, `cloudinary.api-key`, `cloudinary.api-secret`
 
 ### Payments (Stripe)
-- Endpoints: `/api/payments/config`, `/create-payment-intent`, `/confirm/{id}`, `/my-payments`, `/{id}`.
-- Frontend service: `src/services/paymentService.ts`.
-- UI: integrated `PaymentForm` into `Bookings` for PENDING bookings; added `Payments` history page (admin-only for now).
-- Stripe is initialized via `StripeProvider` and `/api/payments/config`.
+- Endpoints: `/api/payments/config`, `/create-payment-intent`, `/confirm/{id}`, `/my-payments`, `/{id}`
+- Frontend service: `src/services/paymentService.ts`
+- UI: integrated `PaymentForm` into `Bookings` for PENDING bookings; added `Payments` history page (admin-only for now)
+- Stripe is initialized via `StripeProvider` and `/api/payments/config`
 
 Admin-only (UI routes & side panel):
-- `/payments` and `/subscription-plans` visible only to `ADMIN`.
+- `/payments` and `/subscription-plans` visible only to `ADMIN`
 
 ### Password Reset (Forgot/Reset)
-- POST `/api/auth/forgot-password` → sends reset link via email.
-- POST `/api/auth/reset-password` → sets new password using token.
-- Frontend pages: `/forgot-password`, `/reset-password?token=...`.
-- Translations added in `locales/en.json` and `locales/bg.json`.
+- POST `/api/auth/forgot-password` → sends reset link via email
+- POST `/api/auth/reset-password` → sets new password using token
+- Frontend pages: `/forgot-password`, `/reset-password?token=...`
+- Translations added in `locales/en.json` and `locales/bg.json`
 
 Mail transport:
-- Default mail bean included; real SMTP recommended for prod.
+- Default mail bean included; real SMTP recommended for prod
 - Brevo (Sendinblue) SMTP example in `backend/src/main/resources/application.properties.example`:
   - `spring.mail.host=smtp-relay.brevo.com`
   - `spring.mail.port=587`
@@ -104,7 +120,34 @@ Mail transport:
   - `spring.mail.properties.mail.smtp.auth=true`
   - `spring.mail.properties.mail.smtp.starttls.enable=true`
 
-Note: Verify sender/domain in Brevo for best deliverability.
+Note: Verify sender/domain in Brevo for best deliverability
+
+### Plan Generator & AI Features
+- AI-powered workout plan generation based on user goals and preferences
+- Personalized nutrition plans with dietary restrictions
+- Plan history tracking and progress monitoring
+- Plan sharing functionality with social media integration
+- Multi-step wizard interface for plan creation
+
+### Community & Social Features
+- Live community showcase displaying real trainers and clients
+- Instagram integration with embedded posts
+- Mysterious leaderboard for user engagement and gamification
+- Real-time community statistics and metrics
+- Image galleries with swipe navigation and modal previews
+
+### UI/UX Enhancements
+- Responsive design optimized for mobile and desktop
+- Modal scroll locking and touch gesture support
+- Consistent image preview modals across all pages
+- Improved navigation and user experience
+- Internationalization support (English/Bulgarian)
+
+### Promo Code System
+- Promo code support for registrations and bookings
+- Configurable discount system
+- Admin-managed promotion campaigns
+- Integration with payment processing
 
 ## 🔐 Roles & Access
 - Payments history and Subscription plans pages: admin-only.
@@ -148,9 +191,9 @@ Frontend:
 The application is deployed on Railway with the following services:
 
 #### Live URLs:
-- **Frontend**: https://frontend-prod2-prod2.up.railway.app
-- **Backend API**: https://backend-prod2-prod2.up.railway.app
-- **Swagger UI**: https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html
+- **Frontend**: https://fitness-booking.fit
+- **Backend API**: https://fitness-booking.fit/api
+- **API Documentation**: https://fitness-booking.fit/api/swagger-ui/index.html
 
 #### Railway Services:
 - **PostgreSQL Database**: `Postgres-Sum3`
@@ -368,21 +411,46 @@ Copy `application.properties.example` to `application.properties` and configure:
 
 ## 📝 API Documentation
 
+### Production
+- **Swagger UI**: https://fitness-booking.fit/api/swagger-ui/index.html
+- **OpenAPI JSON**: https://fitness-booking.fit/api/v3/api-docs
+
+### Local Development
 After starting the backend, API documentation is available at:
 - Swagger UI: http://localhost:8080/api/swagger-ui/index.html
 - OpenAPI JSON: http://localhost:8080/api/v3/api-docs
 
 ## 🧪 Testing the Application
 
+### Production Testing
+1. Visit https://fitness-booking.fit
+2. Register a new account with promo code support
+3. Log in to the system
+4. Explore the different features:
+  - Plan Generator for AI-powered workout plans
+  - Community section with real trainers and clients
+  - Event booking with optional gym selection
+  - Payment processing with Stripe integration
+
+### Local Development Testing
 1. Open http://localhost:3000
 2. Register a new account
 3. Log in to the system
 4. Explore the different features
 
-Notes:
+### Key Features to Test:
+- **Plan Generator**: Create personalized workout and nutrition plans
+- **Community Showcase**: View real trainers and clients with image galleries
+- **Event Management**: Create indoor/outdoor events with optional gym selection
+- **Payment Processing**: Test booking payments with promo code discounts
+- **Image Galleries**: Swipe navigation and modal previews across all pages
+- **Responsive Design**: Test on mobile and desktop devices
+
+### Notes:
 - Bookings page is visible only for Clients. Trainers/Admins see recent bookings on Dashboard. Direct navigation to `/bookings` as Trainer/Admin redirects to `/dashboard`.
 - Editing a Trainer now supports optional password change.
-- Image uploads are available at `POST /api/uploads` and are served from `/uploads/**`.
+- Image uploads are handled via Cloudinary with optimization and deduplication.
+- All modals support keyboard navigation and mobile swipe gestures.
 
 ## 🔧 Troubleshooting
 
@@ -417,7 +485,13 @@ Notes:
 
 ## 🎨 UI/UX
 
-- Modern and responsive design
-- Material Design principles
-- Bulgarian interface
-- Mobile-friendly design
+- Modern and responsive design with Material-UI
+- Material Design principles with custom theming
+- Bilingual interface (English/Bulgarian) with i18n support
+- Mobile-first design with touch gesture support
+- Consistent image preview modals across all pages
+- Swipe navigation for image galleries
+- Modal scroll locking for better mobile experience
+- Google Analytics 4 integration for user behavior tracking
+- Instagram integration for social proof
+- Live community showcase with real user data

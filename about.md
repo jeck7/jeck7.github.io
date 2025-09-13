@@ -146,12 +146,20 @@ The Fitness Booking Platform is a comprehensive, modern web application designed
 - Payment status tracking
 - Refund processing
 - Payment history management
+- Promo code system for discounts
 
 ### Media Management
 - Cloudinary CDN integration
 - Image optimization and transformation
 - Deduplication to prevent duplicate uploads
 - Responsive image delivery
+
+### AI & Advanced Features
+- AI-powered workout plan generation
+- Personalized nutrition plans
+- Plan sharing and social integration
+- Community showcase with real users
+- Gamification and leaderboard system
 
 ## 🚀 Future Roadmap
 
@@ -218,8 +226,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Project Links
 
-- **Live Demo**: [https://frontend-prod2-prod2.up.railway.app](https://frontend-prod2-prod2.up.railway.app)
-- **API Documentation**: [https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
+- **Live Demo**: [https://fitness-booking.fit](https://fitness-booking.fit)
+- **API Documentation**: [https://fitness-booking.fit/api/swagger-ui/index.html](https://fitness-booking.fit/api/swagger-ui/index.html)
 - **GitHub Repository**: [https://github.com/jeck7/fitness-booking-platform](https://github.com/jeck7/fitness-booking-platform)
 - **Issue Tracker**: [https://github.com/jeck7/fitness-booking-platform/issues](https://github.com/jeck7/fitness-booking-platform/issues)
 

@@ -10,9 +10,9 @@ A comprehensive guide showcasing modern full-stack development practices using c
 
 ## 🚀 Live Demo
 
-- **Frontend**: [https://frontend-prod2-prod2.up.railway.app](https://frontend-prod2-prod2.up.railway.app)
-- **Backend API**: [https://backend-prod2-prod2.up.railway.app](https://backend-prod2-prod2.up.railway.app)
-- **API Documentation**: [Swagger UI](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
+- **Frontend**: [https://fitness-booking.fit](https://fitness-booking.fit)
+- **Backend API**: [https://fitness-booking.fit/api](https://fitness-booking.fit/api)
+- **API Documentation**: [Swagger UI](https://fitness-booking.fit/api/swagger-ui/index.html)
 
 ## 🏗️ Technology Stack Overview
 
@@ -31,27 +31,34 @@ This guide demonstrates modern full-stack development with:
 
 ### 🔐 Authentication & Security
 - **JWT-based authentication** with refresh tokens
-- **Role-based access control** (RBAC)
-- **Password reset** functionality
-- **Secure session management**
+- **Role-based access control** (RBAC) - Admin, Trainer, Client
+- **Password reset** functionality with email verification
+- **Secure session management** with HttpOnly cookies
 
 ### 🎨 Modern Frontend Development
 - **React 18** with hooks and functional components
-- **TypeScript** for type safety
-- **Material-UI** component library
-- **Responsive design** for all devices
+- **TypeScript** for type safety and better development experience
+- **Material-UI** component library with custom theming
+- **Responsive design** optimized for mobile and desktop
+- **Internationalization** support (English/Bulgarian)
 
 ### 🗄️ Database & Backend
-- **PostgreSQL** with JPA/Hibernate
-- **RESTful API** design
-- **Database optimization** and indexing
-- **Transaction management**
+- **PostgreSQL** with JPA/Hibernate for data persistence
+- **RESTful API** design with comprehensive endpoints
+- **Database optimization** and proper indexing
+- **Transaction management** for data consistency
 
 ### 💳 Payment & Media Integration
-- **Stripe integration** for secure payments
-- **Cloudinary CDN** for image management
-- **Email notifications** with SMTP
-- **File upload** and processing
+- **Stripe integration** for secure payment processing
+- **Cloudinary CDN** for optimized image management
+- **Email notifications** with SMTP integration
+- **File upload** with deduplication and optimization
+
+### 🤖 AI & Advanced Features
+- **AI-powered workout plan generation** based on user goals
+- **Personalized nutrition plans** with dietary restrictions
+- **Plan sharing functionality** with social media integration
+- **Community features** with live showcase and leaderboards
 
 ## 🛠️ Technology Stack
 
@@ -66,12 +73,14 @@ This guide demonstrates modern full-stack development with:
 - **Maven** - Dependency management
 
 ### Frontend Technologies
-- **React 18** - Modern UI library
-- **TypeScript** - Type-safe JavaScript
-- **Material-UI (MUI)** - Component library
-- **React Router** - Client-side routing
-- **Axios** - HTTP client
+- **React 18** - Modern UI library with latest features
+- **TypeScript** - Type-safe JavaScript development
+- **Material-UI (MUI)** - Component library with custom theming
+- **React Router** - Client-side routing and navigation
+- **Axios** - HTTP client with interceptors
 - **React Query** - Data fetching and caching
+- **i18n** - Internationalization (English/Bulgarian)
+- **Google Analytics 4** - User behavior tracking
 
 ## 📁 Modern Project Structure
 
@@ -181,8 +190,8 @@ This guide is licensed under the MIT License - see the [LICENSE](LICENSE) file f
 
 ## 🔗 Quick Links
 
-- [View Live Demo](https://frontend-prod2-prod2.up.railway.app)
-- [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
+- [View Live Demo](https://fitness-booking.fit)
+- [API Documentation](https://fitness-booking.fit/api/swagger-ui/index.html)
 - [GitHub Repository](https://github.com/jeck7/fitness-booking-platform)
 - [About the Guide](about.md)
 

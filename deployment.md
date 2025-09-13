@@ -14,9 +14,9 @@ This comprehensive guide covers everything you need to know about deploying and 
 
 The Fitness Booking Platform is currently deployed and running on Railway:
 
-- **Frontend**: [https://frontend-prod2-prod2.up.railway.app](https://frontend-prod2-prod2.up.railway.app)
-- **Backend API**: [https://backend-prod2-prod2.up.railway.app](https://backend-prod2-prod2.up.railway.app)
-- **API Documentation**: [Swagger UI](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
+- **Frontend**: [https://fitness-booking.fit](https://fitness-booking.fit)
+- **Backend API**: [https://fitness-booking.fit/api](https://fitness-booking.fit/api)
+- **API Documentation**: [Swagger UI](https://fitness-booking.fit/api/swagger-ui/index.html)
 
 ### Production Services
 
@@ -477,7 +477,7 @@ railway status --service backend-prod2
 
 - [Architecture & Technologies](architecture.md) - Technical architecture overview
 - [Features & Functionality](features.md) - Complete feature overview
-- [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html) - Interactive API docs
+- [API Documentation](https://fitness-booking.fit/api/swagger-ui/index.html) - Interactive API docs
 - [Back to Home](index.md)
 
 ---
