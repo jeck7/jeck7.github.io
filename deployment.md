@@ -56,7 +56,7 @@ Host: switchyard.proxy.rlwy.net
 Port: 44236
 Database: railway
 Username: postgres
-Password: euMeabLugRVDWxQsygSmOTDAumKxfIpz
+Password: 
 Connection URL: jdbc:postgresql://switchyard.proxy.rlwy.net:44236/railway
 ```
 
@@ -68,7 +68,7 @@ Connection URL: jdbc:postgresql://switchyard.proxy.rlwy.net:44236/railway
 # Database Configuration
 SPRING_DATASOURCE_URL=jdbc:postgresql://switchyard.proxy.rlwy.net:44236/railway
 SPRING_DATASOURCE_USERNAME=postgres
-SPRING_DATASOURCE_PASSWORD=euMeabLugRVDWxQsygSmOTDAumKxfIpz
+SPRING_DATASOURCE_PASSWORD=
 
 # JWT Configuration
 JWT_SECRET=your-secure-jwt-secret-key

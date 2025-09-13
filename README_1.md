@@ -206,7 +206,7 @@ Host: switchyard.proxy.rlwy.net
 Port: 44236
 Database: railway
 Username: postgres
-Password: euMeabLugRVDWxQsygSmOTDAumKxfIpz
+Password: 
 Connection URL: jdbc:postgresql://switchyard.proxy.rlwy.net:44236/railway
 ```
 

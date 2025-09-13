@@ -294,7 +294,7 @@ start = "npx serve -s build -l $PORT"
 # Database
 SPRING_DATASOURCE_URL=jdbc:postgresql://switchyard.proxy.rlwy.net:44236/railway
 SPRING_DATASOURCE_USERNAME=postgres
-SPRING_DATASOURCE_PASSWORD=euMeabLugRVDWxQsygSmOTDAumKxfIpz
+SPRING_DATASOURCE_PASSWORD=
 
 # JWT
 JWT_SECRET=your-jwt-secret
