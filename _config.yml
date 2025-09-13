@@ -1,5 +1,50 @@
-title: Mobilskys
-description: A small example of blog done with Jekyll.
-show_downloads: false
-google_analytics:
+# Site settings
+title: "Spring REST Controller Testing Guide"
+description: "Comprehensive guide for writing unit tests for Spring REST controllers using JUnit 5 and Mockito"
+author: "Hristo"
+email: "your-email@example.com"
+url: "https://jeck7.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
 theme: jekyll-theme-architect
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO and social
+show_downloads: false
+google_analytics: # Add your GA tracking ID here if needed
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+
+# Social links
+social:
+  github: jeck7
+  # Add other social media links as needed
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
