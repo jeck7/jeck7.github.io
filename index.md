@@ -1,95 +1,188 @@
 ---
 layout: default
-title: "Spring REST Controller Testing Guide"
-description: "Learn how to write effective unit tests for Spring REST controllers using JUnit 5 and Mockito"
+title: "Fitness Booking Platform"
+description: "A modern full-stack fitness platform for booking trainers and events in gyms. Built with Spring Boot 3, React 18, and PostgreSQL."
 ---
 
-# Spring REST Controller Unit Testing Guide
+# 🏋️ Fitness Booking Platform
 
-Welcome to this comprehensive guide on writing unit tests for Spring REST controllers. This guide will help you understand the best practices and techniques for testing your REST APIs effectively.
+A comprehensive, modern fitness platform that connects clients with trainers and gyms. Built with cutting-edge technologies and designed for scalability, this platform offers seamless booking experiences for fitness enthusiasts.
 
-## Table of Contents
+## 🚀 Live Demo
 
-1. [Introduction to Unit Testing REST Controllers](#introduction)
-2. [Best Practices for Unit Testing](#best-practices)
-3. [Testing with JUnit 5 and Mockito](#junit-mockito)
-4. [Common Testing Patterns](#testing-patterns)
-5. [Advanced Testing Scenarios](#advanced-scenarios)
+- **Frontend**: [https://frontend-prod2-prod2.up.railway.app](https://frontend-prod2-prod2.up.railway.app)
+- **Backend API**: [https://backend-prod2-prod2.up.railway.app](https://backend-prod2-prod2.up.railway.app)
+- **API Documentation**: [Swagger UI](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
 
-## Introduction {#introduction}
+## 🏗️ Architecture Overview
 
-Unit testing REST controllers is crucial for ensuring the reliability and maintainability of your Spring applications. This guide covers everything you need to know to write effective tests.
+This is a full-stack application built with modern technologies:
 
-## Best Practices for Unit Testing {#best-practices}
+- **Backend**: Spring Boot 3.x with Java 17
+- **Frontend**: React 18 with TypeScript
+- **Database**: PostgreSQL with JPA/Hibernate
+- **Authentication**: JWT with HttpOnly refresh cookies
+- **UI Framework**: Material-UI (MUI) with custom theming
+- **Image Management**: Cloudinary CDN
+- **Payments**: Stripe integration
+- **Deployment**: Railway with Docker
 
-When writing JUnit tests for REST controller methods, keep these principles in mind:
+## ✨ Key Features
 
-### Key Principles
+### 👥 User Management
+- **Multi-role system**: Admin, Trainer, Client
+- **Secure authentication** with JWT tokens
+- **Password reset** functionality
+- **User profiles** with image uploads
 
-- **Isolation**: A unit test should test only the controller logic, so mock all injected dependencies
-- **Speed**: Unit tests should be fast - avoid database or network calls
-- **Independence**: Each test should be independent and not rely on other tests
-- **Simplicity**: Keep tests simple and focused on one specific behavior
+### 🏋️‍♂️ Trainer Features
+- **Detailed profiles** with specializations
+- **Work schedule** management
+- **Rating and review** system
+- **Availability** tracking
 
-### What NOT to do
+### 🏢 Gym & Event Management
+- **Gym listings** with location and amenities
+- **Event creation** and management
+- **Time slot booking** system
+- **Real-time availability** updates
 
-- ❌ Don't use a web server (makes tests slow)
-- ❌ Don't test database interactions (that's integration testing)
-- ❌ Don't make tests depend on external services
-- ❌ Don't test multiple behaviors in one test
+### 💳 Payment System
+- **Stripe integration** for secure payments
+- **Booking payments** with PENDING status
+- **Payment history** tracking
+- **Admin payment** management
 
-## Testing with JUnit 5 and Mockito {#junit-mockito}
+## 🛠️ Technology Stack
 
-### Basic Setup
+### Backend Technologies
+- **Spring Boot 3.x** - Modern Java framework
+- **Spring Security** - Authentication and authorization
+- **Spring Data JPA** - Database abstraction
+- **PostgreSQL** - Relational database
+- **JWT** - Token-based authentication
+- **Cloudinary** - Image management and CDN
+- **Stripe API** - Payment processing
+- **Maven** - Dependency management
 
-```java
-@ExtendWith(MockitoExtension.class)
-class UserControllerTest {
-    
-    @Mock
-    private UserService userService;
-    
-    @InjectMocks
-    private UserController userController;
-    
-    // Your test methods here
-}
+### Frontend Technologies
+- **React 18** - Modern UI library
+- **TypeScript** - Type-safe JavaScript
+- **Material-UI (MUI)** - Component library
+- **React Router** - Client-side routing
+- **Axios** - HTTP client
+- **React Query** - Data fetching and caching
+
+## 📁 Project Structure
+
+```
+fitness-booking-platform/
+├── backend/                 # Spring Boot application
+│   ├── src/main/java/      # Java source code
+│   ├── src/main/resources/ # Configuration files
+│   ├── pom.xml            # Maven dependencies
+│   └── application.properties
+├── frontend/               # React application
+│   ├── src/               # React source code
+│   ├── public/            # Static assets
+│   ├── package.json       # NPM dependencies
+│   └── locales/           # Internationalization
+├── railway.toml           # Railway deployment config
+└── docker-compose.yml     # Docker configuration
 ```
 
-### Common Test Scenarios
+## 🚀 Quick Start
 
-1. **Testing GET endpoints**
-2. **Testing POST endpoints with request bodies**
-3. **Testing error handling**
-4. **Testing validation**
+### Prerequisites
+- Java 17+
+- Node.js 18+
+- PostgreSQL
+- Docker (optional)
 
-## Testing Patterns {#testing-patterns}
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd fitness-booking-platform
+```
 
-### 1. Happy Path Testing
-Test the successful execution of your controller methods.
+### 2. Backend Setup
+```bash
+cd backend
+cp src/main/resources/application.properties.example src/main/resources/application.properties
+# Configure your database and other settings
+./mvnw spring-boot:run
+```
 
-### 2. Error Handling Testing
-Verify that your controllers handle errors gracefully.
+### 3. Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### 3. Validation Testing
-Ensure input validation works correctly.
+### 4. Access the Application
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:8080
+- Swagger UI: http://localhost:8080/swagger-ui/index.html
 
-## Advanced Scenarios {#advanced-scenarios}
+## 🔧 Configuration
 
-- Testing with complex request/response objects
-- Testing security annotations
-- Testing custom exception handlers
-- Performance testing considerations
+### Environment Variables
+- **Database**: PostgreSQL connection string
+- **JWT**: Secret key and expiration settings
+- **Cloudinary**: Image management credentials
+- **Stripe**: Payment processing keys
+- **SMTP**: Email service configuration
+
+### Key Configuration Files
+- `application.properties` - Backend configuration
+- `railway.toml` - Deployment configuration
+- `docker-compose.yml` - Local development setup
+
+## 📚 Documentation
+
+- [Architecture & Technologies](architecture.md) - Detailed technical overview
+- [Features & Functionality](features.md) - Complete feature list
+- [Deployment Guide](deployment.md) - Production deployment instructions
+- [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html) - Interactive API docs
+
+## 🎯 Development Highlights
+
+### Modern Development Practices
+- **TypeScript** for type safety
+- **JWT authentication** with refresh tokens
+- **RESTful API** design
+- **Responsive design** for all devices
+- **Internationalization** support (EN/BG)
+
+### Security Features
+- **HttpOnly cookies** for refresh tokens
+- **CORS** configuration for cross-origin requests
+- **Input validation** and sanitization
+- **Role-based access control**
+
+### Performance Optimizations
+- **Cloudinary CDN** for image delivery
+- **React Query** for efficient data fetching
+- **Lazy loading** for better performance
+- **Database indexing** for fast queries
+
+## 🤝 Contributing
+
+This project is open source and welcomes contributions! Please see our [Contributing Guidelines](about.md#contributing) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Quick Start
+## 🔗 Quick Links
 
-Ready to start testing? Check out our [Getting Started Guide](page1.md) for a step-by-step tutorial.
-
-## About This Guide
-
-This guide is maintained by [Hristo](about.md) and covers modern Spring testing practices using JUnit 5 and Mockito.
+- [View Live Demo](https://frontend-prod2-prod2.up.railway.app)
+- [API Documentation](https://backend-prod2-prod2.up.railway.app/swagger-ui/index.html)
+- [GitHub Repository](https://github.com/jeck7/fitness-booking-platform)
+- [About the Project](about.md)
 
 ---
 
